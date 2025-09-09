@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<!--
+Resume Field Mapping Checklist:
+✓ Name: Rajshekar G N
+✓ Email: gnrajshekar5@gmail.com
+✓ LinkedIn: linkedin.com/in/rajshekar-g-n
+✓ GitHub: github.com/rajshekar321
+✓ Role: Python Developer
+✓ Summary: Computer Science graduate with expertise in Python development...
+✓ Skills: Languages (Python, Java, C++), Frameworks (FastAPI, Pandas, etc.)
+✓ Experience: Project Intern at Aqmenz Automation Pvt Ltd (Jan 2024 – Jun 2024)
+✓ Projects: 4 projects (FastAPI To-Do, Bookstore Management, Heart Disease Prediction, Airlines Reservation)
+✓ Education: B.E. in Information Science and Engineering, SJB Institute of Technology
+✓ Location: Bangalore, Karnataka, India
+✓ Resume PDF: Static file at /resume/resume.pdf
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajshekar G N - Python Developer</title>
+    <meta name="description" content="Python Developer specializing in FastAPI, REST APIs, and backend systems. Based in Bangalore, India.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media (prefers-reduced-motion: reduce) {
+            .scroll-smooth { scroll-behavior: auto; }
+        }
+        
+        .focus-visible:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        
+        /* Dark mode styles */
+        .dark {
+            background-color: #0b0f14;
+            color: #e5e7eb;
+        }
+        
+        .dark .bg-white { background-color: #0b0f14; }
+        .dark .text-gray-900 { color: #e5e7eb; }
+        .dark .text-gray-700 { color: #e5e7eb; }
+        .dark .text-gray-600 { color: #9ca3af; }
+        .dark .text-gray-800 { color: #e5e7eb; }
+        .dark .border-gray-200 { border-color: #374151; }
+        .dark .bg-gray-50 { background-color: #1f2937; }
+        .dark .bg-gray-100 { background-color: #374151; }
+        .dark .hover\:bg-gray-100:hover { background-color: #4b5563; }
+        .dark .text-blue-600 { color: #93c5fd; }
+        .dark .hover\:text-blue-500:hover { color: #bfdbfe; }
+        .dark .bg-blue-600 { background-color: #2563eb; }
+        .dark .hover\:bg-blue-700:hover { background-color: #1d4ed8; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900 transition-colors duration-150">
+    <!-- Skip to content link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded focus-visible">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-200 z-50 transition-colors duration-150">
+        <div class="max-w-3xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-xl font-semibold text-gray-900">Rajshekar G N</h1>
+                    <p class="text-sm text-gray-600">Python Developer • FastAPI • Backend</p>
+                </div>
+                <nav class="flex items-center space-x-6">
+                    <a href="#about" class="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-150 focus-visible">About</a>
+                    <a href="#skills" class="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-150 focus-visible">Skills</a>
+                    <a href="#projects" class="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-150 focus-visible">Projects</a>
+                    <a href="#experience" class="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-150 focus-visible">Experience</a>
+                    <a href="#contact" class="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-150 focus-visible">Contact</a>
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-150 focus-visible" aria-label="Toggle dark mode">
+                        <svg id="sun-icon" class="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg id="moon-icon" class="w-4 h-4 text-gray-600 hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="max-w-3xl mx-auto px-6 py-12 space-y-24">
+        
+        <!-- Hero Section -->
+        <section id="about" class="text-center space-y-8">
+            <div class="space-y-4">
+                <h2 class="text-4xl sm:text-5xl font-semibold text-gray-900 leading-tight">
+                    Building scalable backend systems with Python & FastAPI
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Computer Science graduate with expertise in Python development, REST API design (FastAPI), and backend systems. Passionate about building scalable, secure, and maintainable services.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full">Python & FastAPI Specialist</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full">SQL & PostgreSQL Expert</span>
+                <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full">Docker & Linux Ready</span>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://github.com/rajshekar321" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-150 focus-visible">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    View GitHub
+                </a>
+                <a href="/resume/resume.pdf" download="Rajshekar_GN_Resume.pdf" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-150 focus-visible">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Featured Projects</h2>
+            
+            <div class="grid gap-8">
+                <!-- Project 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-150">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900">FastAPI-Based To-Do List API</h3>
+                        <p class="text-gray-600">Asynchronous CRUD API with comprehensive JWT authentication and interactive Swagger UI documentation for seamless task management.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">FastAPI</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">SQLAlchemy</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">JWT</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/rajshekar321/TodoListFastAPI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-500 transition-colors duration-150 focus-visible">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-150">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Bookstore Management System API</h3>
+                        <p class="text-gray-600">Complete inventory and order management system with JWT authentication, deployed via Uvicorn for production-ready performance.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">FastAPI</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">JWT</span>
+                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs">Uvicorn</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/rajshekar321/bookstore FASTAPI" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-500 transition-colors duration-150 focus-visible">
+                                View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-150">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Heart Disease Prediction Model</h3>
+                        <p class="text-gray-600">High-accuracy machine learning model using XGBoost with feature importance analysis and comprehensive data visualization for medical insights.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">Python</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">XGBoost</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">Pandas</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">Matplotlib</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">Seaborn</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-gray-500 text-sm">May 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-150">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900">Airlines Reservation System</h3>
+                        <p class="text-gray-600">Responsive web application for flight booking with comprehensive authentication and booking confirmation features.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">HTML</span>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">CSS</span>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-gray-500 text-sm">January 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Experience</h2>
+            
+            <div class="border border-gray-200 rounded-lg p-6">
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Project Intern</h3>
+                            <p class="text-gray-600">Aqmenz Automation Pvt Ltd</p>
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            <p>January 2024 – June 2024</p>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3"></span>
+                            Built a KNN-based customer churn prediction model, improving churn accuracy by 12%
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3"></span>
+                            Preprocessed data using Pandas and visualized trends with Matplotlib for business insights
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-1.5 h-1.5 bg-gray-400 rounded-full mt-2 mr-3"></span>
+                            Tuned hyperparameters and deployed model prototype for stakeholder review
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Education</h2>
+            
+            <div class="border border-gray-200 rounded-lg p-6">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900">Bachelor of Engineering in Information Science and Engineering</h3>
+                        <p class="text-gray-600">SJB Institute of Technology, Bangalore, India</p>
+                        <p class="text-sm text-gray-500 mt-1">CGPA: 7.32/10.0</p>
+                    </div>
+                    <div class="text-sm text-gray-500 mt-2 sm:mt-0">
+                        2020 – 2024
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Get In Touch</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-8 space-y-6">
+                <p class="text-gray-600 text-center">
+                    I'm always interested in discussing new opportunities, interesting projects, or just having a chat about technology.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="mailto:gnrajshekar5@gmail.com?subject=Hello%20Rajshekar&body=Hi%20Rajshekar,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0A" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-150 focus-visible">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Send Email
+                    </a>
+                    <a href="https://github.com/rajshekar321" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors duration-150 focus-visible">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/rajshekar-g-n" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors duration-150 focus-visible">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200 py-8">
+        <div class="max-w-3xl mx-auto px-6 text-center text-gray-600">
+            <p>&copy; 2025 Rajshekar G N. Based in Bangalore, India.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            html.classList.add('dark');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    html.classList.add('dark');
+                    sunIcon.classList.add('hidden');
+                    moonIcon.classList.remove('hidden');
+                } else {
+                    html.classList.remove('dark');
+                    sunIcon.classList.remove('hidden');
+                    moonIcon.classList.add('hidden');
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!--
+How to deploy on Vercel:
+1. Create a new repository on GitHub and push this index.html file to the root
+2. Create a folder structure: public/resume/ and place your resume PDF as public/resume/resume.pdf
+3. Connect your GitHub repo to Vercel (vercel.com)
+4. Import the project - Vercel will auto-detect it as a static site
+5. Leave Build Command empty and set Output Directory to "." if prompted
+6. Deploy - your site will be live with the PDF accessible at /resume/resume.pdf
+
+How to customize:
+1. Update personal information in the HTML content
+2. Modify colors by changing Tailwind classes (bg-blue-600, text-blue-700, etc.)
+3. Add/remove sections by duplicating existing section structures
+4. Replace the resume PDF by uploading a new file to public/resume/resume.pdf
+5. Update social links and contact information in the contact section
+6. Modify the dark mode colors in the CSS custom properties section
+-->
+
+        <!-- Skills Section -->
+        <section id="skills" class="space-y-8">
+            <h2 class="text-3xl font-semibold text-gray-900">Skills & Technologies</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="text-lg font-medium text-gray-800">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">C++</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-lg font-medium text-gray-800">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">FastAPI</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Pandas</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">NumPy</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Matplotlib</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">BeautifulSoup</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-lg font-medium text-gray-800">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">SQLAlchemy</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="text-lg font-medium text-gray-800">DevOps & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm">Git</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm">Linux</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm">Uvicorn</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <h3 class="text-lg font-medium text-gray-800">Core Concepts</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Object-Oriented Programming</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Data Structures & Algorithms</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST API Design</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">DevOps</span>
+                </div>
+            </div>
+        </section>
