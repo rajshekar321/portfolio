@@ -126,7 +126,7 @@ Resume Field Mapping Checklist:
                     </svg>
                     View GitHub
                 </a>
-                <a href="/resume/resume.pdf" download="Rajshekar_GN_Resume.pdf" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-150 focus-visible">
+                <a href="/resume.pdf" download="Rajshekar_GN_Resume.pdf" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-150 focus-visible">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                     </svg>
@@ -377,18 +377,19 @@ Resume Field Mapping Checklist:
 
 <!--
 How to deploy on Vercel:
-1. Create a new repository on GitHub and push this index.html file to the root
-2. Create a folder structure: public/resume/ and place your resume PDF as public/resume/resume.pdf
-3. Connect your GitHub repo to Vercel (vercel.com)
-4. Import the project - Vercel will auto-detect it as a static site
-5. Leave Build Command empty and set Output Directory to "." if prompted
-6. Deploy - your site will be live with the PDF accessible at /resume/resume.pdf
+1. Create a new repository on GitHub and push these files to the root:
+   - index.html
+   - resume.pdf (your actual resume)
+   - vercel.json
+2. Connect your GitHub repo to Vercel (vercel.com)
+3. Import the project - Vercel will auto-detect it as a static site
+4. Deploy - your site will be live with the PDF accessible at /resume.pdf
 
 How to customize:
 1. Update personal information in the HTML content
 2. Modify colors by changing Tailwind classes (bg-blue-600, text-blue-700, etc.)
 3. Add/remove sections by duplicating existing section structures
-4. Replace the resume PDF by uploading a new file to public/resume/resume.pdf
+4. Replace resume.pdf with your actual resume file
 5. Update social links and contact information in the contact section
 6. Modify the dark mode colors in the CSS custom properties section
 -->
